@@ -1,24 +1,30 @@
-# Data-Cancer_RedesNeurais
-Classificação de tumores de mama (benigno/maligno) com machine learning com Redes Neurais
+# Data Cancer — Parte 2: Redes Neurais Artificiais
 
-Classificação de Câncer com Redes Neurais
+Projeto de Machine Learning voltado à classificação de tumores de mama como benignos ou malignos, utilizando uma Rede Neural Artificial (MLP — Multi-Layer Perceptron).
 
-Diagnóstico de Câncer de Mama
+Este repositório representa a **segunda etapa do projeto Data Cancer**, dando continuidade ao trabalho anterior, no qual explorei diferentes algoritmos de Machine Learning e técnicas de preparação e análise de dados.
 
-Este projeto é a continuação direta do desenvolvimento anterior focado na detecção de câncer de mama utilizando o dataset Breast Cancer Wisconsin. No estágio passado, exploramos a engenharia de recursos e tratamentos iniciais. Agora, avançamos para a aplicação de uma Rede Neural Artificial (MLP - Multi-Layer Perceptron) para maximizar a precisão dos diagnósticos.
+**Projeto anterior:** [Data Cancer — Classificação com Machine Learning](https://github.com/caioamb08/Data-cancer)
 
+---
 
- Evolução e Melhorias nesta Etapa
+# Objetivo do projeto
 
-• Tratamento de Dados Cirúrgico: Correção de bugs de codificação e nulos na coluna alvo (diagnosis), mapeando os tumores de forma binária (0 para Maligno e 1 para Benigno).
-• Ajuste de Escala Numérica: Eliminação do uso incorreto de encoders categóricos em dados contínuos. Aplicamos exclusivamente o StandardScaler para normalizar os 30 atributos numéricos das células.
-• Arquitetura Oculta Otimizada: Implementação do modelo MLPClassifier estruturado com duas camadas ocultas de (16, 8) neurônios, função de ativação relu e otimizador adam.
+Dar continuidade ao estudo de classificação de tumores de mama, aprofundando os conhecimentos em redes neurais artificiais e explorando diferentes técnicas de preparação dos dados, treinamento e avaliação de modelos.
 
+O objetivo também é documentar minha evolução prática em Python, Machine Learning e análise de dados, registrando os métodos e ferramentas estudados durante o desenvolvimento.
 
-Resultados Obtidos
+# Base de dados
 
-A aplicação da Rede Neural superou as expectativas, demonstrando uma convergência rápida e estabilidade estatística:
-• Acurácia Média de Treino: 100.00% (ajuste perfeito aos padrões históricos).
-• Acurácia de Teste (Holdout): 97.66% (excelente capacidade de generalização).
-• Acurácia Média na Validação Cruzada (10-Fold): 0.9771 (~97.71%), provando que o modelo é extremamente consistente e seguro contra variações nos dados.
-A matriz de classificação final registrou apenas 4 erros em 171 pacientes de teste, consolidando este modelo como uma ferramenta de altíssima confiabilidade para apoio à decisão médica.
+Foi utilizado o conjunto de dados **Breast Cancer Wisconsin (Diagnostic)**, composto por informações numéricas extraídas de características de células mamárias.
+
+- 569 registros;
+- 30 características numéricas;
+- Variável-alvo: diagnóstico do tumor;
+- Classificação binária:
+  - `0`: Maligno (M);
+  - `1`: Benigno (B).
+
+A tabela original foi incluída no repositório para permitir a consulta dos dados utilizados no projeto.
+
+## Etapas desenvol
